@@ -172,7 +172,7 @@ function renderProductCart() {
     });
     const closeButton = `
     <div class="cart-header">
-      <button class="bClose">Close</button>
+      <button class="bClose">cerrar</button>
     </div>`;
     const purchaseButton = productCart.items.length > 0
         ? `
@@ -220,7 +220,7 @@ function renderProductCart() {
       bPurchase.addEventListener("click", e => {
         productCart.methods.purchase();
 
-        alert ("gracias")
+        alert ("gracias por la compra , preciose cerrar")
         renderProduct ();
         renderProductCart ();
       });

@@ -123,22 +123,4 @@ productos.forEach( (producto) => {
 });
 
 const entrar =parseInt(prompt("te interesa alguno?")) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
