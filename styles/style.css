@@ -15,8 +15,8 @@ body {
   align-content: center;
   flex-direction: column;
   justify-content: flex-end;
-  width: 150px;
-  height: 300px;
+  width: 250px;
+  height: 430px;
   border-radius: 5px;
   border: solid 1px #ccc;
   padding: 20px 20px 0;
@@ -79,5 +79,6 @@ button:hover {
 }
 
 img{
-  width: 150px;
+  width: 250px;
+  object-fit: cover;
 }

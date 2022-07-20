@@ -18,12 +18,13 @@ const datos = {
     },
     items: [ 
         {   id : 0,
-           // img :"/img/0.jpg" ,
+            
             nombre : "remera",
             tipo : "remera",
             cantidad :10,
             precio : 1200,
             talle : 1,
+            img :"/img/0.jpg" ,
         },
         
         {id : 1,
@@ -31,7 +32,8 @@ const datos = {
             tipo : "buso",
             cantidad :10,
             precio : 1200,
-            talle : 1,
+            talle : 2,
+            img :"/img/1.jpg" ,
         },
 
 
@@ -40,7 +42,8 @@ const datos = {
             tipo : "zapatillas",
             cantidad :10,
             precio : 1200,
-            talle : 1,
+            talle : 40,
+            img :"/img/2.jpg" ,
         }
     ]
 };
@@ -105,13 +108,16 @@ function renderProduct (){
     const html = datos.items.map ((item) => {
         return `
             <div class="item">
-                <div class="img">
-                <img src="/img/0.jpg" alt=""> 
-                </div>
+                
+
+                <div class="img"><img src="${item.img}" alt=""></div>
+               
+                
 
                 <div class="nombre">${item.nombre}</div>
                 <div class="precio">${numberToCurrency(item.precio)}</div>
                 <div class="cantidad">${item.cantidad} units</div>
+                <div class="nombre">talle:${item.talle}</div>
                
                 <div class="actions">
                     <button class= "add" data-id="${
