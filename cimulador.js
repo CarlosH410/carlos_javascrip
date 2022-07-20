@@ -6,6 +6,11 @@ listaClientes.push(new Cliente("Fernando", "Gutierrez", 1000));
 listaClientes.push(new Cliente("Camila", "Fernandez", 3000));
 listaClientes.push(new Cliente("Joaquin", "Apellido2", 1500));
 listaClientes.push(new Cliente("Adriana", "Apellido3", 500));
+listaClientes.push(new Cliente("Carlos", "Huallpa", 600));
+listaClientes.push(new Clientes("Alfredo" , "Fernandes" ,1500));
+listaClientes.push(new Clientes("Chino" , "Peca" ,2000));
+listaClientes.push(new Cliente("David", "Velazques", 200));
+
 
 // Filtrar clientes
 const inputBuscar = document.getElementById("buscarCliente");

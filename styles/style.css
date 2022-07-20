@@ -1,68 +1,83 @@
-html,
 body {
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
 }
-
-body {
-  background-color: #17de17;
+#product-container {
+  
+  padding: 20px ;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  gap: 10px;
 }
 
-#arrt {
-  background: #e3f6f5;
-  width: 30rem;
-  padding: 4rem;
-text-align: center;
+#product-container .item {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 150px;
+  height: 300px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  padding: 20px 20px 0;
+  
+  
 }
 
-h1 {
-  color: #57636e;
-  font-size: 3rem;
-  text-align: center;
-  padding: 2px 0px;
-  border-radius: 50px;
-}
+.actions {
 
-#question {
-  font-family: sans-serif;
-  font-size: 1.7rem;
-  color: #5a6772;
-}
-
-.buttons {
   margin-top: 30px;
+  
+  text-align: center;
 }
 
-.button {
-  background-color: #34a3a3;
-  width: 250px;
+
+
+#art-cart-container {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.item .nombre {
+  font-weight: bold;
+}
+.item .precio {
+  color: green;
+  font-weight: bold;
+}
+.item div {
+  padding: 5px 0;
+}
+
+.total {
+  padding: 10px 0;
+  font-weight: bold;
   font-size: 20px;
-  color: #fff;
-  border-radius: .3rem;
-  padding: 10px 20px;
-  margin: 10px 40px 10px 0px;
 }
 
-#progress {
-  color: #2b2b2b;
-  font-size: 18px;
-}
-
-#btn0:hover,
-#btn1:hover,
-#btn2:hover,
-#btn3:hover {
+button {
+  border: none;
+  background-color: rgb(14, 235, 187);
+  padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #57636e;
 }
 
-#btn0:focus,
-#btn1:focus,
-#btn2:focus,
-#btn3:focus {
-  outline: 0;
+button:hover {
+  background-color: rgb(9, 210, 167);
+}
+
+img{
+  width: 150px;
 }

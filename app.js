@@ -1,5 +1,5 @@
 
-/*for(let i = 1; i <= 1; i++) {
+for(let i = 1; i <= 1; i++) {
 
     const nombreAlumno = prompt("Ingrese nombre del alumno " + i);
 
@@ -43,19 +43,19 @@ edad = 12
 
 
 const numero1 = 10
-const numero2 = 20 */
+const numero2 = 20 
 
 
 
 
 
-/*
+
 const nota1 = parseInt(prompt("ingrese la primera nota"));
 const nota2 = parseInt(prompt("ingrese la segunda nota"));
 
 const promedio = (nota1 + nota2) / 2;
 
-alert ("su promedio es: " + promedio)*/
+alert ("su promedio es: " + promedio)
 
 
 /*
@@ -122,36 +122,10 @@ productos.forEach( (producto) => {
     alert(productos);
 });
 
-const entrar =parseInt(prompt("te interesa alguno?")) */
+const entrar =parseInt(prompt("te interesa alguno?")) 
 
-//@ts-check
-import {  Arrt } from "./juego/arrt.js";
-import { UI } from "./juego/UI.js";
-import { questions } from "./juego/question.js";
 
-// Renderring the page
-const renderPage = (arrt, ui) => {
-  if (arrt.isEnded()) {
-    ui.showScores(arrt.score);
-  } else {
-    console.log(arrt);
-    ui.showQuestion(arrt.getQuestionIndex().text);
-    ui.showProgress(arrt.questionIndex + 1, arrt.questions.length);
-    ui.showChoices(arrt.getQuestionIndex().choices, (currenChoice) => {
-      arrt.guess(currenChoice);
-      renderPage(arrt, ui);
-    });
-  }
-};
 
-function main() {
-  const arrt = new Arrt(questions);
-  const ui = new UI();
-
-  renderPage(arrt, ui);
-}
-
-main();
 
 
 
