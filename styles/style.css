@@ -8,6 +8,7 @@ body {
   padding: 20px ;
   display: flex;
   gap: 10px;
+  flex-direction: row;
 }
 
 #product-container .item {
@@ -16,10 +17,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   width: 250px;
-  height: 430px;
-  border-radius: 5px;
-  border: solid 1px #ccc;
-  padding: 20px 20px 0;
+  padding: 10px;
   
   
 }
@@ -29,6 +27,7 @@ body {
   margin-top: 30px;
   
   text-align: center;
+  
 }
 
 
@@ -72,6 +71,7 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 button:hover {
@@ -81,4 +81,7 @@ button:hover {
 img{
   width: 250px;
   object-fit: cover;
+}
+.add {
+  border-radius: 5px;
 }

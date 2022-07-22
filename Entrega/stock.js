@@ -107,13 +107,15 @@ renderProduct();
 function renderProduct (){
     const html = datos.items.map ((item) => {
         return `
-            <div class="item">
+        <div class="card" style="width: 18rem;">
+            <img src="${item.img}" class="card-img-top" alt="...">
+            
                 
-
-                <div class="img"><img src="${item.img}" alt=""></div>
+                <div class="item">
+                
+                
                
                 
-
                 <div class="nombre">${item.nombre}</div>
                 <div class="precio">${numberToCurrency(item.precio)}</div>
                 <div class="cantidad">${item.cantidad} units</div>
@@ -125,6 +127,24 @@ function renderProduct (){
                 
                 </div>
             </div>    
+
+                
+                
+
+                
+               
+                
+
+                
+                
+        
+        
+                
+          
+        </div>
+
+    </div>
+              
         `;
     }) 
 
